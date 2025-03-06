@@ -10,7 +10,7 @@ import routerTransacciones from "./transacciones/infrastructure/rest/transaccion
 
 dotenv.config();
 const port = process.env.PORT;
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173", '*'];
 const options: cors.CorsOptions = {
   origin: allowedOrigins,
 };
