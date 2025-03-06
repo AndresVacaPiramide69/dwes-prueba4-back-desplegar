@@ -16,7 +16,7 @@ const options: cors.CorsOptions = {
 };
 const app = express();
 app.use(express.json());
-app.use(cors(options));
+app.use(cors({allowedOrigins:'*'}));
 
 //routers
 const api = "/api";
